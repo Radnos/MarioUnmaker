@@ -13,7 +13,7 @@ which ones are signed or not.
 | Offset | Type | Description |
 |--------|------|-------------|
 | 00 | u64 | Assumed to be a version number. Always 0xB (11) right now |
-| 08 | u32 | Checksum. Standard CRC32 of the entire file from offset 0x10 onwards. |
+| 08 | u32 | Checksum. Standard CRC32 (CRC-32/ISO-HDLC) of the entire file from offset 0x10 onwards. |
 | 0C | *padding* | 4 unused bytes |
 | 10 | u16 | Creation year |
 | 12 | u8  | Creation month |
